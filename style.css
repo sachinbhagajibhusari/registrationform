@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  :root {
+    --classicBlue: #34568b;
+    --purple: #9f00a7;
+    --pink: #ffc0c7;
+    --darkPurple: #282a35;
+    --bodyBg: #ccc;
+    --customGray: #e6d6f6;
+    --facebook: rgb(59, 89, 152);
+    --twitter: rgb(29, 161, 242);
+    --gmail: rgb(219, 68, 55);
+  }
+  body {
+    background-color: var(--bodyBg);
+  }
+  main {
+    position: relative;
+    width: 1000px;
+    height: 550px;
+    top: 10vh;
+    margin: auto;
+  }
+  
+  .visible {
+    display: block;
+  }
+  img {
+    /* position: relative; */
+    height: 550px;
+    width: 100%;
+  }
+  .fa-xmark {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  .fa-xmark:hover {
+    cursor: pointer;
+    color: #db4437;
+  }
+  
+  form {
+    width: 330px;
+    margin: auto !important;
+    /* margin-top: 10vh !important; */
+  }
+  .btn {
+    color: #fff;
+  }
+  
+  .fa-circle-user,
+  .fa-key,
+  .fa-envelope,
+  .fa-user,
+  .fa-code {
+    border: 1px solid var(--customGray);
+    padding: 0.5rem;
+  }
+  
+  label[for="rememberMe"]:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  label[for="rememberMe"]:hover > input {
+    box-shadow: 0 0 5px 10px #333;
+  }
+  .social-media{
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .alt-logIn {
+    /* font-size: 1.1rem; */
+    
+    padding: 0.6rem;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .fa-facebook-square {
+    background-color: rgb(39, 58, 100);
+  }
+
+  .btn-facebook {
+    background-color: var(--facebook);
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .fa-twitter-square {
+    background-color: rgb(24, 127, 192);
+  }
+  .btn-twitter {
+    background-color: var(--twitter);
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .fa-google {
+    background-color: rgb(153, 48, 39);
+  }
+  .btn-gmail {
+    background-color: var(--gmail);
+  
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+ .register{
+  width: 100%;
+  background-color: whitesmoke;
+  
+ }
+ .register button{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: blue;
+  margin-top: 20px;
+ }
+ .horizontal{
+  width: 100%;
+  height: 2px;
+  float: left;
+  margin-top: 20px;
+  background-color: var(--customGray);
+ }
+ .signin{
+  width: 100%;
+  background-color: whitesmoke;
+ }
+ .signin button{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(47, 44, 44);
+  margin-top: 20px;
+ }
+ 
+  /* TODO: Make sign in form Responsive  */
+  @media (max-width: 1000px) {
+    main {
+      max-width: 580px;
+      height: 550px;
+    }
+    
+    main div:nth-child(3) {
+      display: none;
+    }
+  }
+  
+    

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/733718af8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css cdn -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <main class="row m-auto shadow bg-white px-0 rounded-3">
+        <div class="col">
+            <form action="./pages/signIn.html" class="d-flex flex-column justify-content-around align-items-center h-100">
+                <h2 class="text-center display-2 text-white">Sing in to your account.</h2>
+                <button type="submit" class="btn btn-info shadow btn-lg rounded-pill w-100">Sign In</button>
+              
+                <i class="fa-solid fa-user-lock fa-10x text-white"></i>
+            </form>
+           
+        </div>
+        <div class="col bg-dark">
+            <form action="./pages/registration.html" class="d-flex flex-column justify-content-around align-items-center h-100">
+                <h2 class="text-center display-2">Register a new account.</h2>
+                <button type="submit" class="btn btn-danger shadow btn-lg rounded-pill w-100">Register</button>
+              
+                <i class="fa-solid fa-id-card fa-10x"></i>
+            </form>
+            
+        </div>
+
+    </main>
+</body>
+<script type="text/javascript">
+    const buttons = document.querySelectorAll("button");
+    // console.log(typeof buttons);
+
+    (function () {
+        // console.log("function");
+        Object.keys(buttons).map((key,button) => 
+        onMouseOverAndOut(buttons[key])
+        );
+        function onMouseOverAndOut(element) {
+            element.onmouseover = (e)=> {
+                // console.log(e);
+                classToggler(e);
+            };
+            element.onmouseleave = (e)=> {
+                // console.log(e);
+                classToggler(e);
+            };
+        }
+
+        function classToggler(e) {
+            console.log(e.target.parentElement.parentElement)
+            e.target.classList.toggle("btn-light");
+            e.target.parentElement.parentElement.classList.toggle("bg-dark");
+            // e.target.parentElement.
+
+        }
+    })();
+    
+
+</script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/733718af8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css cdn -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <main class="row m-auto shadow bg-white px-0 rounded-3">
+        <a href="../index.html"><i class="fa-solid fa-xmark"></i></a>
+        <div class="col">
+            <form action="./welcome.html" class="row g-3 needs-validation" novalidate>
+                <h2 class="text-center mb-5 mt-3 ml-5">Sing-In</h2>
+                <!-- user name and password -->
+                <div class="d-flex p-0 ">
+                   <i class="fa-solid fa-circle-user"></i>
+                   <input type="text" class="form-control" placeholder="Username or email" id="validationCustom01" required>
+                </div>
+
+                <div class="d-flex p-0 mt-3 ">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="text" class="form-control" placeholder="Password" id="validationCustom02" required>
+                 </div>
+
+                <!-- Remember me and sign in button -->
+                <div class="d-flex p-0">
+                    <div class="col-7">
+                        <input type="checkbox" id="rememberMe"/>
+                        <label for="rememberMe"><small>Remember me</small></label>
+                    </div>
+                    <div class="col-5">
+                        <button class=" btn btn-primary px-3 w-100 btn-sm mt-1 p-1" type="submit">Sign&nbsp;In</button>
+                    </div>
+                </div> 
+                <!-- Register now and forgot password -->
+                <div class="d-flex p-0">
+                    <div class="col-7">
+                        <small><a href="registration.html">Register now</a></small>
+                    </div>
+                    <div class="col-5">
+                        <small><a href="#" class="text-secondary">Forgot&nbsp;Password?</a></small>
+                    </div>
+                </div>
+                
+               <!-- hr line    -->
+               <div class="horizontal d-flex p-0">
+                
+               </div>
+                <br>
+                <br>
+                <!-- Alternative signin -->
+                <!-- Facebook -->
+                <div class="social-media d-flex justify-content-center p-0">
+                    <i class="fa-brands fa-facebook-square alt-logIn"></i>
+                    <a href="http://facebook.com/">
+                        <button type="button" class="btn btn-facebook ">SING IN WITH FACEBOOK</button>
+                    </a>
+                </div>
+                <!-- Twitter -->
+                <div class="social-media d-flex justify-content-center p-0">
+                    <i class="fa-brands fa-twitter-square alt-logIn"></i>
+                    <a href="http://twitter.com/">
+                        <button type="button" class="btn btn-twitter ">SING IN WITH TWITTER</button>
+                    </a>
+                </div>
+                <!-- Gmail -->
+                <div class="social-media d-flex justify-content-center p-0">
+                    <i class="fa-brands fa-google alt-logIn"></i>
+                    <a href="http://gmail.com/ ">
+                        <button type="button" class="btn btn-gmail ">SING IN WITH GMAIL</button>
+                    </a>
+                </div>
+                </form>
+            </div>
+        <div class="col px-0">
+            <img src="../img/photo-1543269665-bd1bc9e6f296.jpg"
+             alt="right col img">
+        </div>
+ 
+    </main>
+    <script type="text/javascript" src="../validation.js"></script>
+</body>
+</html>
